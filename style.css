@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: gray;
+    
+
+}
+.container{
+    max-width: 1200px;
+    margin:  0 auto;
+    padding: 0 20px;
+    
+}
+header{
+    background-color: aqua;
+    color:black;
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+
+}
+.logo h1{
+    font-size: 2rem;
+    font-weight: bold;
+    
+}
+.logo tagline{
+    font-size: 0.9rem;
+    opacity: 0.8;
+
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+
+}
+.nav-links a{
+    color: rgb(156, 50, 50);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transform: background-color 0.3s ease;
+
+}
+.nav-links a:hover{
+    background-color: rgba(255,255, 255, 0,1);
+}
+
+.hero {
+  height: 100vh;
+  min-height: 300px;
+
+  background:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("https://images.unsplash.com/photo-1517677208171-0bc6725a3e60");
+
+  background-size: cover;
+  background-position: center;
+
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: antiquewhite;
+}
+
+.hero h2 {
+  color: white;
+  font-size: 32px;
+}
+a{ color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+button{
+    letter-spacing: 2px;
+   font-size: 20px;
+   font-display: swap;
+   
+
+}
+button :hover{
+    background-color: rgb(116, 116, 201);
+    
+}
+.hero-button{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+
+}
+.btn{
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: inline-block;
+
+}
+.btn-primary{
+    background-color:red;
+    color: antiquewhite;
+}
+.btn-primary :hover{
+    background-color: rgb(216, 71, 71);
+    transform: translateY(-2px);
+}
+.btn-secondary{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+
+}
+.btn-secondary :hover{
+    background-color: white;
+    color: gray;
+}
